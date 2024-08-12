@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Limbu&display=swap');
+*{
+    font-family: 'Noto Sans Limbu', sans-serif;  
+    font-size: medium;
+    font-weight: 300;
+    color: white;
+    margin: 0;      
+    padding: 0;    
+}
+body{
+    background-color: rgb(43 40 46);
+}
+    /* ZAGLAVLJA  */
+#header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 7vh;  
+    margin-left: 10px;
+}
+.menu{
+    list-style-type: none; 
+    margin-right: 10px;
+}
+.menu-iteam {
+    display: inline; 
+}
+.menu-iteam  a {
+    padding: 14px 16px; 
+    text-decoration: none; 
+}
+.menu-iteam a:hover {
+    font-style: italic;
+}
+    /*  KRAJ ZAGLAVLJA  */
+.formaCela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color:rgb(50 45 53);
+}
+.grupa{
+    margin: 10px;
+}
+.dugmici{
+    display: flex;
+    flex-direction: row;
+}
+input, select, textarea{
+    width: 100%;
+    color: rgb(43 40 46); 
+}
+.dugme, select, optgroup, option{
+    color: rgb(43 40 46);
+    font-weight: 600;
+}
+    /*  RESPOZIVNOST   */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+		width: 100%;
+        height: auto;
+    }    
+    #logo{
+        margin-left: 0;
+    }
+    .menu{        
+        margin-right: 0;
+    }
+    .menu-iteam{
+        display: block;      
+    } 
+    .menu-iteam a{
+        display: block;
+        text-align: center;
+    }
+}
